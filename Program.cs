@@ -1,29 +1,13 @@
 ﻿
 // https://www.youtube.com/watch?v=il9gl8MH17s&ab_channel=RawCoding
+// https://www.youtube.com/watch?v=3GhKdDCvtKE&ab_channel=RawCoding
 
 async Task Main()
 {
     await MakeTeaAsync();
 }
 
-//static string MakeTea()
-//{
-//    var water = BoilWater();
-//    Console.WriteLine("take the cups out");
-//    Console.WriteLine("put tea in cups");
-//    var tea = $"pour {water} in cups";
-//    Console.WriteLine(tea);
-//    return tea;
-//}
-
-//static string BoilWater()
-//{
-//    Console.WriteLine("starts the kettle");
-//    Console.WriteLine("waiting for the kettle");
-//    Task.Delay(2000).GetAwaiter().GetResult();
-//    Console.WriteLine("kettle finished boiling");
-//    return "water";
-//}
+await Main();
 
 static async Task<string> MakeTeaAsync()
 {
@@ -55,4 +39,4 @@ static async Task<string> BoilWaterAsync()
     return "water";
 }
 
-await Main();
+
